@@ -15,21 +15,34 @@ Algorithm:
 4.	Exit the program.
  
 Program:
+~~~
+#include <stdio.h>
 
-//type your code here
-
-
-
-
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    switch(n) {
+        case 1:printf("one");break;
+        case 2:printf("two");break;
+        case 3:printf("three");break;
+        case 4:printf("four");break;
+        case 5:printf("five");break;
+        case 6:printf("six");break;
+        case 7:printf("seven");break;
+        case 8:printf("eight");break;
+        case 9:printf("nine");break;
+        case 10:printf("ten");break;
+        case 11:printf("eleven");break;
+        case 12:printf("twelve");break;
+        case 13:printf("thirteen");break;
+        default: printf("Greater than 13");
+    }
+    return 0;
+}
+~~~
 Output:
-
-
-//paste your output here
-
-
-
-
-
+<img width="1297" height="587" alt="image" src="https://github.com/user-attachments/assets/0d81badd-315e-4e10-9e81-8bb75fdaeccc" />
 
 Result:
 Thus, the program is verified successfully
