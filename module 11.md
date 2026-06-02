@@ -99,7 +99,7 @@ Thus, the program prints the sum of the integers in the array is verified succes
 
 
  
-EXP NO 25: C PROGRAM TO COUNT THE NUMBER OF WORDS IN A      SENTENCE
+EXP NO 25: C PROGRAM TO COUNT THE NUMBER OF WORDS IN A SENTENCE
 
 
 
@@ -120,12 +120,33 @@ o	If a character is not a space, it may belong to a word. If it's the first non-
 
 
 Program:
-//type your code here
+```
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+    char sentence[50];
+    int count = 0, inWord = 0;
+    fgets(sentence, 200, stdin);
+
+    for (int i = 0; sentence[i] != '\0'; i++) {
+        if (!isspace(sentence[i]) && !ispunct(sentence[i])) {
+            if (inWord == 0) {
+                count++;
+                inWord = 1;
+            }
+        } else
+            inWord = 0; 
+    }
+    printf("Word count: %d\n", count);
+    return 0;
+}
+
+```
 
 Output:
-//paste your output here
-
-
+<img width="747" height="568" alt="image" src="https://github.com/user-attachments/assets/47756a49-7644-4b0c-9df7-412b84afc706" />
 
 Result:
 
